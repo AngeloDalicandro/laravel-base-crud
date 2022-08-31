@@ -2,16 +2,14 @@
 
 @section('main_content')
 
-    <h1>I nostri fumetti</h1>
+    @foreach($comics as $comic)
 
-    <ul>
+        <div>
+            {{ $comic['title'] }} - Prezzo: {{ $comic['price'] }}&euro; <br>
 
-        @foreach
+        </div>
 
-            {{ }} - {{ }} - {{  }}
+        <br>
 
-        @endforeach
-
-    </ul>
-
+    @endforeach
 @endsection
