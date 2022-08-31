@@ -5,8 +5,7 @@
     @foreach($comics as $comic)
 
         <div>
-            {{ $comic['title'] }} - Prezzo: {{ $comic['price'] }}&euro; <br>
-
+            {{ $comic['title'] }} - <a href=" {{ route('comics.show', ['comic' => $comic->id]) }} ">Read more</a>
         </div>
 
         <br>
