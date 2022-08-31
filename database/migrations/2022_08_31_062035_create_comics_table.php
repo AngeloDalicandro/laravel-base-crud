@@ -18,7 +18,7 @@ class CreateComicsTable extends Migration
             $table->string('title', 50);
             $table->text('description');
             $table->text('thumb');
-            $table->decimal('price', 2, 2);
+            $table->decimal('price', 8, 2);
             $table->string('series', 50);
             $table->date('sale_date');
             $table->string('type', 50);
