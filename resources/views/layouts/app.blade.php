@@ -17,6 +17,10 @@
             <li>
                 <a href="{{ route('comics.index') }}">Fumetti</a>
             </li>
+
+            <li>
+                <a href="{{ route('comics.create') }}">Aggiungi fumetto</a>
+            </li>
         </ul>
     </header>
 
