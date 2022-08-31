@@ -13,7 +13,7 @@ class CreateComicsTable extends Migration
      */
     public function up()
     {
-        Schema::create('comic', function (Blueprint $table) {
+        Schema::create('comics', function (Blueprint $table) {
             $table->id();
             $table->string('title', 50);
             $table->text('description');
